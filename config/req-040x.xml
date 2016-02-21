@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<packager>
+    <fields>
+        <!-- Bit Map, Extended -->
+        <field id="1">
+            <required>[true]</required>
+        </field>
+        <!-- Primary Account Number -->
+        <field id="2">
+            <required>[true]</required>
+            <value>[notNull:[message value],00]</value>
+        </field>
+        <!-- Processing Code -->
+        <field id="3">
+            <required>[true]</required>
+        </field>
+        <!-- Amount, Transaction -->
+        <field id="4">
+            <required>[true]</required>
+        </field>
+        <!-- Transmission Date/Time -->
+        <field id="7">
+            <required>[true]</required>
+        </field>
+        <!-- System Trace Audit Number -->
+        <field id="11">
+            <required>[true]</required>
+        </field>
+        <!-- Date, Local Transaction -->
+        <field id="13">
+            <required>[true]</required>
+        </field>
+        <!-- Date, Settlement -->
+        <field id="15">
+            <required>[true]</required>
+        </field>
+        <!-- Acquiring Institution Identification Code -->
+        <field id="32">
+            <required>[true]</required>
+        </field>
+        <!-- Retrieval Reference Number -->
+        <field id="37">
+            <required>[true]</required>
+        </field>
+        <!-- Auth ID Response -->
+        <field id="38">
+            <required>[true]</required>
+        </field>
+        <!-- Response Code -->
+        <field id="39">
+            <required>[true]</required>
+        </field>
+        <!-- Card Acceptor Name/Location -->
+        <field id="43">
+            <required>[true]</required>
+        </field>
+        <!-- Currency Code, Transaction -->
+        <field id="49">
+            <required>[true]</required>
+        </field>
+        <!-- Private Data 1 -->
+        <field id="60">
+            <required>[true]</required>
+        </field>
+        <!-- Original Data Element -->
+        <field id="90">
+            <required>[true]</required>
+        </field>
+        <!-- Account Identification 2 -->
+        <field id="103">
+            <required>[true]</required>
+        </field>
+    </fields>
+</packager>

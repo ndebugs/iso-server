@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<packager>
+    <fields>
+        <!-- Bit Map, Extended -->
+        <field id="1">
+            <required>[true]</required>
+        </field>
+        <!-- Primary Account Number -->
+        <field id="2">
+            <required>[true]</required>
+            <value>[temp get:2]</value>
+        </field>
+        <!-- Processing Code -->
+        <field id="3">
+            <required>[true]</required>
+            <value>[temp get:3]</value>
+        </field>
+        <!-- Amount, Transaction -->
+        <field id="4">
+            <required>[true]</required>
+            <value>[temp get:4]</value>
+        </field>
+        <!-- Transmission Date/Time -->
+        <field id="7">
+            <required>[true]</required>
+            <value>[temp get:7]</value>
+        </field>
+        <!-- System Trace Audit Number -->
+        <field id="11">
+            <required>[true]</required>
+            <value>[temp get:11]</value>
+        </field>
+        <!-- Date, Settlement -->
+        <field id="15">
+            <required>[true]</required>
+            <value>[temp get:15]</value>
+        </field>
+        <!-- Auth ID Response Length -->
+        <field id="27">
+            <value>[temp get:27]</value>
+        </field>
+        <!-- Acquiring Institution Identification Code -->
+        <field id="32">
+            <required>[true]</required>
+            <value>[temp get:32]</value>
+        </field>
+        <!-- Forwarding Institution Identification Code -->
+        <field id="33">
+            <required>[true]</required>
+            <value>[temp get:33]</value>
+        </field>
+        <!-- Retrieval Reference Number -->
+        <field id="37">
+            <value>[temp get:37]</value>
+        </field>
+        <!-- Auth ID Response -->
+        <field id="38">
+            <required>[true]</required>
+            <value>123456</value>
+        </field>
+        <!-- Response Code -->
+        <field id="39">
+            <required>[true]</required>
+            <value>00</value>
+        </field>
+        <!-- Card Acceptor Terminal Identification -->
+        <field id="41">
+            <required>[true]</required>
+            <value>[temp get:41]</value>
+        </field>
+        <!-- Additional Data – Private -->
+        <field id="48">
+            <value>[temp get:48]</value>
+        </field>
+        <!-- Currency Code, Transaction -->
+        <field id="49">
+            <required>[true]</required>
+            <value>[temp get:49]</value>
+        </field>
+        <!-- Additional Amounts -->
+        <field id="54">
+            <value>[temp get:54]</value>
+        </field>
+        <!-- Private Data 2 -->
+        <field id="61">
+            <value>[temp get:61]</value>
+        </field>
+        <!-- Account Identification 2 -->
+        <field id="103">
+            <required>[true]</required>
+            <value>[temp get:103]</value>
+        </field>
+    </fields>
+</packager>

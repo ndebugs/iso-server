@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<packager>
+    <fields>
+        <!-- Bit Map, Extended -->
+        <field id="1">
+            <required>[true]</required>
+        </field>
+        <!-- Transmission Date/Time -->
+        <field id="7">
+            <required>[true]</required>
+        </field>
+        <!-- System Trace Audit Number -->
+        <field id="11">
+            <required>[true]</required>
+        </field>
+        <!-- Forwarding Institution Identification Code -->
+        <field id="33" />
+        <!-- Network Management Information Code -->
+        <field id="70">
+            <required>[true]</required>
+            <filter error="true">[xor:[eq:[message value],001],[isNull:[message get:33]]]</filter>
+        </field>
+    </fields>
+</packager>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<packager>
+    <fields>
+        <!-- Bit Map, Extended -->
+        <field id="1">
+            <required>[true]</required>
+        </field>
+        <!-- Transmission Date/Time -->
+        <field id="7">
+            <required>[true]</required>
+            <value>[temp get:7]</value>
+        </field>
+        <!-- System Trace Audit Number -->
+        <field id="11">
+            <required>[true]</required>
+            <value>[temp get:11]</value>
+        </field>
+        <!-- Response Code -->
+        <field id="39">
+            <required>[true]</required>
+            <value>00</value>
+        </field>
+        <!-- Network Management Information Code -->
+        <field id="70">
+            <required>[true]</required>
+            <value>[temp get:70]</value>
+        </field>
+    </fields>
+</packager>

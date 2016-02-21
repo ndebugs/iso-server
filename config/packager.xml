@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<packager>
+    <fields>
+        <!-- Bit Map, Extended -->
+        <field id="1">
+            <type>String</type>
+            <length fixed="true">16</length>
+            <filter error="true">[string match:[message value],^\[0-9A-Fa-f\]*$]</filter>
+        </field>
+        <!-- Primary Account Number -->
+        <field id="2">
+            <type>String</type>
+            <length>19</length>
+            <filter error="true">[string match:[message value],^\[0-9\]*$]</filter>
+        </field>
+        <!-- Processing Code -->
+        <field id="3">
+            <type>String</type>
+            <length fixed="true">6</length>
+            <filter error="true">[string match:[message value],^\[0-9\]*$]</filter>
+        </field>
+        <!-- Amount, Transaction -->
+        <field id="4">
+            <type>String</type>
+            <length fixed="true">12</length>
+            <filter error="true">[string match:[message value],^\[0-9\]*$]</filter>
+            <value>[string pad:[message value],0,-12]</value>
+        </field>
+        <!-- Transmission Date/Time -->
+        <field id="7">
+            <type>DateTime(MMddHHmmss)</type>
+            <length fixed="true">10</length>
+        </field>
+        <!-- System Trace Audit Number -->
+        <field id="11">
+            <type>String</type>
+            <length fixed="true">6</length>
+            <filter error="true">[string match:[message value],^\[0-9\]*$]</filter>
+            <value>[string pad:[message value],0,-6]</value>
+        </field>
+        <!-- Time, Local Transaction -->
+        <field id="12">
+            <type>DateTime(HHmmss)</type>
+            <length fixed="true">6</length>
+        </field>
+        <!-- Date, Local Transaction -->
+        <field id="13">
+            <type>DateTime(MMdd)</type>
+            <length fixed="true">4</length>
+        </field>
+        <!-- Date, Expiration -->
+        <field id="14">
+            <type>DateTime(yyMM)</type>
+            <length fixed="true">4</length>
+        </field>
+        <!-- Date, Settlement -->
+        <field id="15">
+            <type>DateTime(MMdd)</type>
+            <length fixed="true">4</length>
+        </field>
+        <!-- Merchant’s Type -->
+        <field id="18">
+            <type>String</type>
+            <length fixed="true">4</length>
+            <filter error="true">[string match:[message value],^\[0-9\]*$]</filter>
+        </field>
+        <!-- Point of Service Entry Mode -->
+        <field id="22">
+            <type>String</type>
+            <length fixed="true">3</length>
+            <filter error="true">[string match:[message value],^\[0-9\]*$]</filter>
+        </field>
+        <!-- Point of Service Condition Code -->
+        <field id="25">
+            <type>String</type>
+            <length fixed="true">2</length>
+            <filter error="true">[string match:[message value],^\[0-9\]*$]</filter>
+        </field>
+        <!-- Point of Service PIN Capture Code -->
+        <field id="26">
+            <type>String</type>
+            <length fixed="true">2</length>
+            <filter error="true">[string match:[message value],^\[0-9\]*$]</filter>
+        </field>
+        <!-- Auth ID Response Length -->
+        <field id="27">
+            <type>String</type>
+            <length fixed="true">1</length>
+            <filter error="true">[string match:[message value],^\[0-9\]*$]</filter>
+        </field>
+        <!-- Acquiring Institution Identification Code -->
+        <field id="32">
+            <type>String</type>
+            <length>11</length>
+            <filter error="true">[string match:[message value],^\[0-9\]*$]</filter>
+        </field>
+        <!-- Forwarding Institution Identification Code -->
+        <field id="33">
+            <type>String</type>
+            <length>11</length>
+            <filter error="true">[string match:[message value],^\[0-9\]*$]</filter>
+        </field>
+        <!-- Track 2 Data -->
+        <field id="35">
+            <type>String</type>
+            <length>37</length>
+        </field>
+        <!-- Retrieval Reference Number -->
+        <field id="37">
+            <type>String</type>
+            <length fixed="true">12</length>
+            <filter error="true">[string match:[message value],^\[0-9A-Za-z\]*$]</filter>
+        </field>
+        <!-- Auth ID Response -->
+        <field id="38">
+            <type>String</type>
+            <length fixed="true">6</length>
+            <filter error="true">[string match:[message value],^\[0-9A-Za-z\]*$]</filter>
+        </field>
+        <!-- Response Code -->
+        <field id="39">
+            <type>String</type>
+            <length fixed="true">2</length>
+            <filter error="true">[string match:[message value],^\[0-9A-Za-z\]*$]</filter>
+        </field>
+        <!-- Card Acceptor Terminal Identification -->
+        <field id="41">
+            <type>String</type>
+            <length fixed="true">8</length>
+            <value>[string pad:[message value], ,8]</value>
+        </field>
+        <!-- Card Acceptor Identification -->
+        <field id="42">
+            <type>String</type>
+            <length fixed="true">15</length>
+            <value>[string pad:[message value], ,15]</value>
+        </field>
+        <!-- Card Acceptor Name/Location -->
+        <field id="43">
+            <type>String</type>
+            <length fixed="true">40</length>
+            <value>[string pad:[message value], ,40]</value>
+        </field>
+        <!-- Additional Data – Private -->
+        <field id="48">
+            <type>String</type>
+            <length>999</length>
+        </field>
+        <!-- Currency Code, Transaction -->
+        <field id="49">
+            <type>String</type>
+            <length fixed="true">3</length>
+            <filter error="true">[string match:[message value],^\[0-9\]*$]</filter>
+        </field>
+        <!-- Personal Identification Number (PIN) -->
+        <field id="52">
+            <type>String</type>
+            <length fixed="true">64</length>
+        </field>
+        <!-- Additional Amounts -->
+        <field id="54">
+            <type>String</type>
+            <length>120</length>
+            <filter error="true">[string match:[message value],^\[0-9\]*$]</filter>
+        </field>
+        <!-- Private Data 1 -->
+        <field id="60">
+            <type>String</type>
+            <length>999</length>
+        </field>
+        <!-- Private Data 2 -->
+        <field id="61">
+            <type>String</type>
+            <length>999</length>
+        </field>
+        <!-- Network Management Information Code -->
+        <field id="70">
+            <type>String</type>
+            <length fixed="true">3</length>
+            <filter error="true">[string match:[message value],^\[0-9\]*$]</filter>
+        </field>
+        <!-- Credits, Number -->
+        <field id="74">
+            <type>String</type>
+            <length fixed="true">10</length>
+            <filter error="true">[string match:[message value],^\[0-9\]*$]</filter>
+        </field>
+        <!-- Credits, Reversal Number -->
+        <field id="75">
+            <type>String</type>
+            <length fixed="true">10</length>
+            <filter error="true">[string match:[message value],^\[0-9\]*$]</filter>
+        </field>
+        <!-- Debits, Number -->
+        <field id="76">
+            <type>String</type>
+            <length fixed="true">10</length>
+            <filter error="true">[string match:[message value],^\[0-9\]*$]</filter>
+        </field>
+        <!-- Debits, Reversal Number -->
+        <field id="77">
+            <type>String</type>
+            <length fixed="true">10</length>
+            <filter error="true">[string match:[message value],^\[0-9\]*$]</filter>
+        </field>
+        <!-- Transfer, Number -->
+        <field id="78">
+            <type>String</type>
+            <length fixed="true">10</length>
+            <filter error="true">[string match:[message value],^\[0-9\]*$]</filter>
+        </field>
+        <!-- Transfer, Reversal Number -->
+        <field id="79">
+            <type>String</type>
+            <length fixed="true">10</length>
+            <filter error="true">[string match:[message value],^\[0-9\]*$]</filter>
+        </field>
+        <!-- Inquiries, Number -->
+        <field id="80">
+            <type>String</type>
+            <length fixed="true">10</length>
+            <filter error="true">[string match:[message value],^\[0-9\]*$]</filter>
+        </field>
+        <!-- Authorizations, Number -->
+        <field id="81">
+            <type>String</type>
+            <length fixed="true">10</length>
+            <filter error="true">[string match:[message value],^\[0-9\]*$]</filter>
+        </field>
+        <!-- Credits, Processing Fee Amount -->
+        <field id="82">
+            <type>String</type>
+            <length fixed="true">12</length>
+            <filter error="true">[string match:[message value],^\[0-9\]*$]</filter>
+        </field>
+        <!-- Credits, Transaction Fee Amount -->
+        <field id="83">
+            <type>String</type>
+            <length fixed="true">12</length>
+            <filter error="true">[string match:[message value],^\[0-9\]*$]</filter>
+        </field>
+        <!-- Debits, Processing Fee Amount -->
+        <field id="84">
+            <type>String</type>
+            <length fixed="true">12</length>
+            <filter error="true">[string match:[message value],^\[0-9\]*$]</filter>
+        </field>
+        <!-- Debits, Transaction Fee Amount -->
+        <field id="85">
+            <type>String</type>
+            <length fixed="true">12</length>
+            <filter error="true">[string match:[message value],^\[0-9\]*$]</filter>
+        </field>
+        <!-- Credits, Amount -->
+        <field id="86">
+            <type>String</type>
+            <length fixed="true">16</length>
+            <filter error="true">[string match:[message value],^\[0-9\]*$]</filter>
+        </field>
+        <!-- Credits, Reversal Amount -->
+        <field id="87">
+            <type>String</type>
+            <length fixed="true">16</length>
+            <filter error="true">[string match:[message value],^\[0-9\]*$]</filter>
+        </field>
+        <!-- Debits, Amount -->
+        <field id="88">
+            <type>String</type>
+            <length fixed="true">16</length>
+            <filter error="true">[string match:[message value],^\[0-9\]*$]</filter>
+        </field>
+        <!-- Debits, Reversal Amount -->
+        <field id="89">
+            <type>String</type>
+            <length fixed="true">16</length>
+            <filter error="true">[string match:[message value],^\[0-9\]*$]</filter>
+        </field>
+        <!-- Original Data Element -->
+        <field id="90">
+            <type>String</type>
+            <length fixed="true">42</length>
+            <filter error="true">[string match:[message value],^\[0-9\]*$]</filter>
+        </field>
+        <!-- Amount, Net Settlement -->
+        <field id="97">
+            <type>String</type>
+            <length fixed="true">16</length>
+            <filter error="true">[string match:[message value],^\[0-9A-Za-z\]*$]</filter>
+        </field>
+        <!-- Settlement Institution Identification Code -->
+        <field id="99">
+            <type>String</type>
+            <length>11</length>
+            <filter error="true">[string match:[message value],^\[0-9\]*$]</filter>
+        </field>
+        <!-- Receiving Institution Identification Code -->
+        <field id="100">
+            <type>String</type>
+            <length>11</length>
+            <filter error="true">[string match:[message value],^\[0-9\]*$]</filter>
+        </field>
+        <!-- Account Identification 2 -->
+        <field id="103">
+            <type>String</type>
+            <length>28</length>
+        </field>
+    </fields>
+</packager>

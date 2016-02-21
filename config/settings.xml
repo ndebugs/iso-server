@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<settings>
+    <port>5400</port>
+    <low-high>true</low-high>
+    <message-types>
+        <message-type>0200</message-type>
+        <message-type alias="040x">0400</message-type>
+        <message-type alias="040x">0401</message-type>
+        <message-type alias="042x">0420</message-type>
+        <message-type alias="042x">0421</message-type>
+        <message-type>0800</message-type>
+    </message-types>
+    <routes>
+        <route>
+            <request-type>0200</request-type>
+            <response-type>0210</response-type>
+            <field-keys>
+                <field-key>103</field-key>
+            </field-keys>
+        </route>
+        <route>
+            <request-type>040x</request-type>
+            <response-type>0410</response-type>
+            <field-keys>
+                <field-key>103</field-key>
+            </field-keys>
+        </route>
+        <route>
+            <request-type>042x</request-type>
+            <response-type>0430</response-type>
+            <field-keys>
+                <field-key>103</field-key>
+            </field-keys>
+        </route>
+        <route>
+            <request-type>0800</request-type>
+            <response-type>0810</response-type>
+        </route>
+    </routes>
+</settings>
